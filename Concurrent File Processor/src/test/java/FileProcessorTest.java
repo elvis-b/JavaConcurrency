@@ -30,7 +30,7 @@ public class FileProcessorTest {
         File backupFile = new File("./src/main/backup/" + testFileName);
         Assert.assertTrue(backupFile.exists(), "Backup file should exist");
 
-        // Clean up (optional)
+        // Clean up
         Files.deleteIfExists(outputFile.toPath());
         Files.deleteIfExists(backupFile.toPath());
     }
